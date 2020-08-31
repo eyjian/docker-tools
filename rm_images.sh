@@ -24,5 +24,5 @@ for ((i=0; i<${#images[@]}; ++i))
 do
   image="${images[$i]}"
   echo "[$i] docker rmi \"$image\""
-  #docker rmi "$image"
+  docker rmi "$image"
 done
